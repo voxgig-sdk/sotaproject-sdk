@@ -1,0 +1,197 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "SotaProject API",
+    "description": "This API provides access to the functionalities of sotaproject.com, aiming to serve as a robust media platform. It allows users to retrieve publications, manage categories, and interact with various media contents.",
+    "version": "1.0.0",
+    "contact": {
+      "url": "https://github.com/l0v3m0n3y/sotaproject"
+    }
+  },
+  "externalDocs": {
+    "description": "API Documentation",
+    "url": "https://github.com/l0v3m0n3y/sotaproject"
+  },
+  "servers": [
+    {
+      "url": "https://sotaproject.com/api/v1",
+      "description": "Production server"
+    }
+  ],
+  "paths": {
+    "/tg-news": {
+      "get": {
+        "summary": "Get fresh news",
+        "description": "Retrieves the latest publications and news from sotaproject.com. Supports pagination through limit and offset parameters.",
+        "operationId": "getTgNews",
+        "tags": [
+          "Publications"
+        ],
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Maximum number of publications to return",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 50,
+              "minimum": 1,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "Number of publications to skip for pagination",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 0,
+              "minimum": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with list of publications",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "publications": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Publication"
+                      }
+                    },
+                    "total": {
+                      "type": "integer",
+                      "description": "Total number of publications available"
+                    },
+                    "limit": {
+                      "type": "integer",
+                      "description": "Number of publications returned"
+                    },
+                    "offset": {
+                      "type": "integer",
+                      "description": "Number of publications skipped"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request - Invalid parameters",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Publication": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the publication"
+          },
+          "title": {
+            "type": "string",
+            "description": "Title of the publication"
+          },
+          "category": {
+            "type": "string",
+            "description": "Category of the publication (e.g., investigation, news)",
+            "example": "investigation"
+          },
+          "content": {
+            "type": "string",
+            "description": "Content body of the publication"
+          },
+          "author": {
+            "type": "string",
+            "description": "Author of the publication"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Publication date and time"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to the full publication"
+          },
+          "media": {
+            "type": "array",
+            "description": "Media content associated with the publication",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "image",
+                    "video",
+                    "audio"
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string",
+            "description": "Error message"
+          },
+          "code": {
+            "type": "integer",
+            "description": "Error code"
+          },
+          "details": {
+            "type": "string",
+            "description": "Detailed error information"
+          }
+        },
+        "required": [
+          "error"
+        ]
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Publications",
+      "description": "Operations related to retrieving and managing publications"
+    }
+  ]
+}

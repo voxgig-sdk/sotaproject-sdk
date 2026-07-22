@@ -1,0 +1,25 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      contact: {
+        url: "https://github.com/l0v3m0n3y/sotaproject"
+      }
+      description: "This API provides access to the functionalities of sotaproject.com, aiming to serve as a robust media platform. It allows users to retrieve publications, manage categories, and interact with various media contents."
+      servers: [
+        {
+          description: "Production server"
+          url: "https://sotaproject.com/api/v1"
+        }
+      ]
+      summary: "This API provides access to the functionalities of sotaproject.com, aiming to serve as a robust media platform."
+      title: "SotaProject API"
+      version: "1.0.0"
+      website: "https://github.com/l0v3m0n3y/sotaproject"
+    }
+  }
+}
+
