@@ -91,7 +91,7 @@ main: kit: entity: publication: {
           }
           transform: {
             req: "`reqdata`"
-            res: "`body`"
+            res: "`body.publications`"
           }
         }
       ]

@@ -1,4 +1,4 @@
-# ProjectName SDK exists test
+# Sotaproject SDK exists test
 
 import pytest
 from sotaproject_sdk import SotaprojectSDK

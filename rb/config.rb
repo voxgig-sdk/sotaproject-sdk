@@ -112,6 +112,7 @@ module SotaprojectConfig
                       },
                     ],
                   },
+                  "kind" => "http",
                   "method" => "GET",
                   "orig" => "/tg-news",
                   "parts" => [
@@ -125,7 +126,7 @@ module SotaprojectConfig
                   },
                   "transform" => {
                     "req" => "`reqdata`",
-                    "res" => "`body`",
+                    "res" => "`body.publications`",
                   },
                   "index$" => 0,
                 },

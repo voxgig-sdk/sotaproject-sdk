@@ -218,9 +218,9 @@ data **directly** — there is no wrapper:
 
 Check `err` first (it is non-`nil` on failure), then use `value`:
 
-    local publication, err = client:Publication():load()
+    local publication, err = client:Publication():list()
     if err then error(err) end
-    -- publication is the loaded record
+    -- publication is the record list
 
 Only `direct()` returns a response envelope — a `table` with `ok`,
 `status`, `headers`, and `data` keys.

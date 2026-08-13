@@ -14,12 +14,12 @@ from __future__ import annotations
 
 from urllib.parse import quote
 
-from config import make_config
-from features import _make_feature
-from core.control import SotaprojectControl
-from core.error import SotaprojectError
-from core.result import SotaprojectResult
-from core.spec import SotaprojectSpec
+from sotaproject_sdk.config import make_config
+from sotaproject_sdk.features import _make_feature
+from sotaproject_sdk.core.control import SotaprojectControl
+from sotaproject_sdk.core.error import SotaprojectError
+from sotaproject_sdk.core.result import SotaprojectResult
+from sotaproject_sdk.core.spec import SotaprojectSpec
 
 
 # True when this SDK was generated with the named feature.

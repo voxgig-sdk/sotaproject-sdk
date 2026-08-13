@@ -37,7 +37,7 @@ class PublicationEntity extends SotaprojectEntityBase<Publication> {
 
 
 
-  async list(this: any, reqmatch?: PublicationListMatch, ctrl?: Control): Promise<Publication[]> {
+  async list(this: any, reqmatch?: PublicationListMatch, ctrl?: Control): Promise<PublicationEntity[]> {
 
     const utility = this._utility
 

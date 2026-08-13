@@ -117,6 +117,7 @@ class SotaprojectConfig
                       ],
                     ],
                   ],
+                  'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/tg-news',
                   'parts' => [
@@ -130,7 +131,7 @@ class SotaprojectConfig
                   ],
                   'transform' => [
                     'req' => '`reqdata`',
-                    'res' => '`body`',
+                    'res' => '`body.publications`',
                   ],
                   'index$' => 0,
                 ],

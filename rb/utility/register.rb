@@ -24,6 +24,7 @@ require_relative 'prepare_method'
 require_relative 'prepare_params'
 require_relative 'prepare_path'
 require_relative 'prepare_query'
+require_relative 'graphql'
 require_relative 'result_basic'
 require_relative 'result_body'
 require_relative 'result_headers'
@@ -55,6 +56,8 @@ SotaprojectUtility.registrar = ->(u) {
   u.prepare_params = SotaprojectUtilities::PrepareParams
   u.prepare_path = SotaprojectUtilities::PreparePath
   u.prepare_query = SotaprojectUtilities::PrepareQuery
+  u.graphql_body = SotaprojectUtilities::GraphqlBody
+  u.graphql_errors = SotaprojectUtilities::GraphqlErrors
   u.result_basic = SotaprojectUtilities::ResultBasic
   u.result_body = SotaprojectUtilities::ResultBody
   u.result_headers = SotaprojectUtilities::ResultHeaders

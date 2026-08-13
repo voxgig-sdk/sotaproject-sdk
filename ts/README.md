@@ -35,7 +35,9 @@ const client = new SotaprojectSDK()
 
 ### 2. List publication records
 
-`list()` resolves to an array of Publication objects — iterate it directly:
+`list()` resolves to an array of Publication ENTITIES — every operation
+resolves to entities, not raw records. Iterate them directly, and call
+`.data()` on one for the record it holds:
 
 ```ts
 const publications = await client.Publication().list()
@@ -120,7 +122,8 @@ Create a mock client for unit testing — no server required:
 const client = SotaprojectSDK.test()
 
 const publication = await client.Publication().list()
-// publication is a bare entity populated with mock response data
+// publication is the entity, populated with mock response data
+// — call publication.data() for the record itself
 console.log(publication)
 ```
 

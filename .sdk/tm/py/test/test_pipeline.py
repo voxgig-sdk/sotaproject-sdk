@@ -16,11 +16,11 @@
 import pytest
 
 from projectname_sdk import SotaprojectSDK
-from core.error import SotaprojectError
-from core.result import SotaprojectResult
-from core.response import SotaprojectResponse
-from core.spec import SotaprojectSpec
-from feature.base_feature import SotaprojectBaseFeature
+from projectname_sdk.core.error import SotaprojectError
+from projectname_sdk.core.result import SotaprojectResult
+from projectname_sdk.core.response import SotaprojectResponse
+from projectname_sdk.core.spec import SotaprojectSpec
+from projectname_sdk.feature.base_feature import SotaprojectBaseFeature
 
 
 def _client():

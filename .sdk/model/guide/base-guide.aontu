@@ -8,6 +8,7 @@ guide: {
   entity: publication: {
     path: "/tg-news": {
       op: list: method: *GET
+      op: list: transform: res: *("`body.publications`")|top
     }
   }
 

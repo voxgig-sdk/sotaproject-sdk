@@ -3,9 +3,9 @@
 import json
 import pytest
 
-from utility.voxgig_struct import voxgig_struct as vs
+from sotaproject_sdk.utility.voxgig_struct import voxgig_struct as vs
 from sotaproject_sdk import SotaprojectSDK
-from core import helpers
+from sotaproject_sdk.core import helpers
 from test import runner
 
 
