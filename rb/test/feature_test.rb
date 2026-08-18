@@ -15,7 +15,7 @@ require_relative "../Sotaproject_sdk"
 module SotaprojectFeatureHarness
   # True when this SDK was generated with the named feature.
   def self.has_feature?(name)
-    f = SotaprojectConfig.make_config["feature"]
+    f = SotaprojectConfig.shared_config["feature"]
     f.is_a?(Hash) && !f[name].nil?
   end
 

@@ -23,8 +23,8 @@ class SotaprojectSDK:
         utility = SotaprojectUtility()
         self._utility = utility
 
-        from sotaproject_sdk.config import make_config
-        config = make_config()
+        from sotaproject_sdk.config import shared_config
+        config = shared_config()
 
         self._rootctx = utility.make_context({
             "client": self,

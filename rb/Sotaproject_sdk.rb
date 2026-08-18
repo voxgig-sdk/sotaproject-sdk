@@ -28,7 +28,7 @@ class SotaprojectSDK
     utility = SotaprojectUtility.new
     @_utility = utility
 
-    config = SotaprojectConfig.make_config
+    config = SotaprojectConfig.shared_config
 
     @_rootctx = utility.make_context.call({
       "client" => self,

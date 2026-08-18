@@ -40,7 +40,7 @@ class SotaprojectSDK
         $utility = new SotaprojectUtility();
         $this->_utility = $utility;
 
-        $config = SotaprojectConfig::make_config();
+        $config = SotaprojectConfig::shared_config();
 
         $this->_rootctx = ($utility->make_context)([
             "client" => $this,
