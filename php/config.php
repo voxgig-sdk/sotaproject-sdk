@@ -33,6 +33,9 @@ class SotaprojectConfig
         return [
             "main" => [
                 "name" => "Sotaproject",
+                "slug" => "sotaproject",
+                "version" => "0.0.1",
+                "target" => "php",
             ],
             "feature" => [
                 "test" => [
@@ -55,34 +58,42 @@ class SotaprojectConfig
           'fields' => [
             [
               'name' => 'author',
+              'short' => 'Author of the publication',
               'type' => '`$STRING`',
             ],
             [
               'name' => 'category',
+              'short' => 'Category of the publication (e.g., investigation, news)',
               'type' => '`$STRING`',
             ],
             [
               'name' => 'content',
+              'short' => 'Content body of the publication',
               'type' => '`$STRING`',
             ],
             [
               'name' => 'id',
+              'short' => 'Unique identifier for the publication',
               'type' => '`$STRING`',
             ],
             [
               'name' => 'media',
+              'short' => 'Media content associated with the publication',
               'type' => '`$ARRAY`',
             ],
             [
               'name' => 'published_at',
+              'short' => 'Publication date and time',
               'type' => '`$STRING`',
             ],
             [
               'name' => 'title',
+              'short' => 'Title of the publication',
               'type' => '`$STRING`',
             ],
             [
               'name' => 'url',
+              'short' => 'URL to the full publication',
               'type' => '`$STRING`',
             ],
           ],

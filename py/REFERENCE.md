@@ -87,14 +87,14 @@ publication = client.Publication()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `author` | `str` | No |  |
-| `category` | `str` | No |  |
-| `content` | `str` | No |  |
-| `id` | `str` | No |  |
-| `media` | `list` | No |  |
-| `published_at` | `str` | No |  |
-| `title` | `str` | No |  |
-| `url` | `str` | No |  |
+| `author` | `str` | No | Author of the publication |
+| `category` | `str` | No | Category of the publication (e.g., investigation, news) |
+| `content` | `str` | No | Content body of the publication |
+| `id` | `str` | No | Unique identifier for the publication |
+| `media` | `list` | No | Media content associated with the publication |
+| `published_at` | `str` | No | Publication date and time |
+| `title` | `str` | No | Title of the publication |
+| `url` | `str` | No | URL to the full publication |
 
 ### Operations
 

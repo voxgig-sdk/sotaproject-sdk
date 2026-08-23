@@ -36,48 +36,56 @@
               "active": true,
               "name": "author",
               "req": false,
+              "short": "Author of the publication",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "category",
               "req": false,
+              "short": "Category of the publication (e.g., investigation, news)",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "content",
               "req": false,
+              "short": "Content body of the publication",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "id",
               "req": false,
+              "short": "Unique identifier for the publication",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "media",
               "req": false,
+              "short": "Media content associated with the publication",
               "type": "`$ARRAY`"
             },
             {
               "active": true,
               "name": "published_at",
               "req": false,
+              "short": "Publication date and time",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "title",
               "req": false,
+              "short": "Title of the publication",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "url",
               "req": false,
+              "short": "URL to the full publication",
               "type": "`$STRING`"
             }
           ],

@@ -6,7 +6,7 @@ The Golang SDK for the Sotaproject API — an entity-oriented client using stand
 
 It exposes the API as capitalised, semantic **Entities** — e.g. `client.Publication(nil)` — each with the same small set of operations (`List`) instead of raw URL paths and query strings. You call meaning, not endpoints, which keeps the cognitive load low.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb`, `ts` — see
 > the [top-level README](../README.md).
 
 
@@ -260,14 +260,14 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"author"` |  |
-| `"category"` |  |
-| `"content"` |  |
-| `"id"` |  |
-| `"media"` |  |
-| `"published_at"` |  |
-| `"title"` |  |
-| `"url"` |  |
+| `"author"` | Author of the publication |
+| `"category"` | Category of the publication (e.g., investigation, news) |
+| `"content"` | Content body of the publication |
+| `"id"` | Unique identifier for the publication |
+| `"media"` | Media content associated with the publication |
+| `"published_at"` | Publication date and time |
+| `"title"` | Title of the publication |
+| `"url"` | URL to the full publication |
 
 Operations: List.
 
@@ -292,14 +292,14 @@ Create an instance: `publication := client.Publication(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `author` | `string` |  |
-| `category` | `string` |  |
-| `content` | `string` |  |
-| `id` | `string` |  |
-| `media` | `[]any` |  |
-| `published_at` | `string` |  |
-| `title` | `string` |  |
-| `url` | `string` |  |
+| `author` | `string` | Author of the publication |
+| `category` | `string` | Category of the publication (e.g., investigation, news) |
+| `content` | `string` | Content body of the publication |
+| `id` | `string` | Unique identifier for the publication |
+| `media` | `[]any` | Media content associated with the publication |
+| `published_at` | `string` | Publication date and time |
+| `title` | `string` | Title of the publication |
+| `url` | `string` | URL to the full publication |
 
 #### Example: List
 

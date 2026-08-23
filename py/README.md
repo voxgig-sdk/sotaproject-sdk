@@ -243,14 +243,14 @@ On error, `ok` is `False` and `err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `author` |  |
-| `category` |  |
-| `content` |  |
-| `id` |  |
-| `media` |  |
-| `published_at` |  |
-| `title` |  |
-| `url` |  |
+| `author` | Author of the publication |
+| `category` | Category of the publication (e.g., investigation, news) |
+| `content` | Content body of the publication |
+| `id` | Unique identifier for the publication |
+| `media` | Media content associated with the publication |
+| `published_at` | Publication date and time |
+| `title` | Title of the publication |
+| `url` | URL to the full publication |
 
 Operations: List.
 
@@ -275,14 +275,14 @@ Create an instance: `publication = client.Publication()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `author` | `str` |  |
-| `category` | `str` |  |
-| `content` | `str` |  |
-| `id` | `str` |  |
-| `media` | `list` |  |
-| `published_at` | `str` |  |
-| `title` | `str` |  |
-| `url` | `str` |  |
+| `author` | `str` | Author of the publication |
+| `category` | `str` | Category of the publication (e.g., investigation, news) |
+| `content` | `str` | Content body of the publication |
+| `id` | `str` | Unique identifier for the publication |
+| `media` | `list` | Media content associated with the publication |
+| `published_at` | `str` | Publication date and time |
+| `title` | `str` | Title of the publication |
+| `url` | `str` | URL to the full publication |
 
 #### Example: List
 

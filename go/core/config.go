@@ -11,6 +11,9 @@ func MakeConfig() map[string]any {
 	return map[string]any{
 		"main": map[string]any{
 			"name": "Sotaproject",
+			"slug": "sotaproject",
+			"version": "0.0.1",
+			"target": "go",
 		},
 		"feature": map[string]any{
 			"test": map[string]any{
@@ -33,34 +36,42 @@ func MakeConfig() map[string]any {
 				"fields": []any{
 					map[string]any{
 						"name": "author",
+						"short": "Author of the publication",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "category",
+						"short": "Category of the publication (e.g., investigation, news)",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "content",
+						"short": "Content body of the publication",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "id",
+						"short": "Unique identifier for the publication",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "media",
+						"short": "Media content associated with the publication",
 						"type": "`$ARRAY`",
 					},
 					map[string]any{
 						"name": "published_at",
+						"short": "Publication date and time",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "title",
+						"short": "Title of the publication",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "url",
+						"short": "URL to the full publication",
 						"type": "`$STRING`",
 					},
 				},

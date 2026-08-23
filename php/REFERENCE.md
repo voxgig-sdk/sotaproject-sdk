@@ -92,14 +92,14 @@ $publication = $client->Publication();
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `author` | `string` | No |  |
-| `category` | `string` | No |  |
-| `content` | `string` | No |  |
-| `id` | `string` | No |  |
-| `media` | `array` | No |  |
-| `published_at` | `string` | No |  |
-| `title` | `string` | No |  |
-| `url` | `string` | No |  |
+| `author` | `string` | No | Author of the publication |
+| `category` | `string` | No | Category of the publication (e.g., investigation, news) |
+| `content` | `string` | No | Content body of the publication |
+| `id` | `string` | No | Unique identifier for the publication |
+| `media` | `array` | No | Media content associated with the publication |
+| `published_at` | `string` | No | Publication date and time |
+| `title` | `string` | No | Title of the publication |
+| `url` | `string` | No | URL to the full publication |
 
 ### Operations
 

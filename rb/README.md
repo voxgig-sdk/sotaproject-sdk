@@ -237,14 +237,14 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `author` |  |
-| `category` |  |
-| `content` |  |
-| `id` |  |
-| `media` |  |
-| `published_at` |  |
-| `title` |  |
-| `url` |  |
+| `author` | Author of the publication |
+| `category` | Category of the publication (e.g., investigation, news) |
+| `content` | Content body of the publication |
+| `id` | Unique identifier for the publication |
+| `media` | Media content associated with the publication |
+| `published_at` | Publication date and time |
+| `title` | Title of the publication |
+| `url` | URL to the full publication |
 
 Operations: List.
 
@@ -269,14 +269,14 @@ Create an instance: `publication = client.Publication`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `author` | `String` |  |
-| `category` | `String` |  |
-| `content` | `String` |  |
-| `id` | `String` |  |
-| `media` | `Array` |  |
-| `published_at` | `String` |  |
-| `title` | `String` |  |
-| `url` | `String` |  |
+| `author` | `String` | Author of the publication |
+| `category` | `String` | Category of the publication (e.g., investigation, news) |
+| `content` | `String` | Content body of the publication |
+| `id` | `String` | Unique identifier for the publication |
+| `media` | `Array` | Media content associated with the publication |
+| `published_at` | `String` | Publication date and time |
+| `title` | `String` | Title of the publication |
+| `url` | `String` | URL to the full publication |
 
 #### Example: List
 

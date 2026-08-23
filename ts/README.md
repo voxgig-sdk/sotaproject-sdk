@@ -9,7 +9,7 @@ The API is exposed as capitalised, semantic **Entities** — e.g.
 instead of raw URL paths and query parameters. This keeps the surface
 predictable and low-friction for both humans and AI agents.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go`, `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb` — see
 > the [top-level README](../README.md).
 
 
@@ -287,14 +287,14 @@ The `prepare()` method returns:
 
 | Field | Description |
 | --- | --- |
-| `author` |  |
-| `category` |  |
-| `content` |  |
-| `id` |  |
-| `media` |  |
-| `published_at` |  |
-| `title` |  |
-| `url` |  |
+| `author` | Author of the publication |
+| `category` | Category of the publication (e.g., investigation, news) |
+| `content` | Content body of the publication |
+| `id` | Unique identifier for the publication |
+| `media` | Media content associated with the publication |
+| `published_at` | Publication date and time |
+| `title` | Title of the publication |
+| `url` | URL to the full publication |
 
 Operations: list.
 
@@ -319,14 +319,14 @@ Create an instance: `const publication = client.Publication()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `author` | `string` |  |
-| `category` | `string` |  |
-| `content` | `string` |  |
-| `id` | `string` |  |
-| `media` | `any[]` |  |
-| `published_at` | `string` |  |
-| `title` | `string` |  |
-| `url` | `string` |  |
+| `author` | `string` | Author of the publication |
+| `category` | `string` | Category of the publication (e.g., investigation, news) |
+| `content` | `string` | Content body of the publication |
+| `id` | `string` | Unique identifier for the publication |
+| `media` | `any[]` | Media content associated with the publication |
+| `published_at` | `string` | Publication date and time |
+| `title` | `string` | Title of the publication |
+| `url` | `string` | URL to the full publication |
 
 #### Example: List
 

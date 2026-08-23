@@ -231,14 +231,14 @@ Only `direct()` returns a response envelope — a `table` with `ok`,
 
 | Field | Description |
 | --- | --- |
-| `author` |  |
-| `category` |  |
-| `content` |  |
-| `id` |  |
-| `media` |  |
-| `published_at` |  |
-| `title` |  |
-| `url` |  |
+| `author` | Author of the publication |
+| `category` | Category of the publication (e.g., investigation, news) |
+| `content` | Content body of the publication |
+| `id` | Unique identifier for the publication |
+| `media` | Media content associated with the publication |
+| `published_at` | Publication date and time |
+| `title` | Title of the publication |
+| `url` | URL to the full publication |
 
 Operations: List.
 
@@ -263,14 +263,14 @@ Create an instance: `local publication = client:Publication(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `author` | `string` |  |
-| `category` | `string` |  |
-| `content` | `string` |  |
-| `id` | `string` |  |
-| `media` | `table` |  |
-| `published_at` | `string` |  |
-| `title` | `string` |  |
-| `url` | `string` |  |
+| `author` | `string` | Author of the publication |
+| `category` | `string` | Category of the publication (e.g., investigation, news) |
+| `content` | `string` | Content body of the publication |
+| `id` | `string` | Unique identifier for the publication |
+| `media` | `table` | Media content associated with the publication |
+| `published_at` | `string` | Publication date and time |
+| `title` | `string` | Title of the publication |
+| `url` | `string` | URL to the full publication |
 
 #### Example: List
 
