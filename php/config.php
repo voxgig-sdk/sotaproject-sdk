@@ -42,6 +42,7 @@ class SotaprojectConfig
           'options' => [
             'active' => false,
           ],
+          'transport' => 'base',
         ],
             ],
             "options" => [
