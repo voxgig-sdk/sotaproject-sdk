@@ -26,14 +26,8 @@ type Publication struct {
 
 // PublicationListMatch is the typed request payload for Publication.ListTyped.
 type PublicationListMatch struct {
-	Author *string `json:"author,omitempty"`
-	Category *string `json:"category,omitempty"`
-	Content *string `json:"content,omitempty"`
-	Id *string `json:"id,omitempty"`
-	Media *[]any `json:"media,omitempty"`
-	PublishedAt *string `json:"published_at,omitempty"`
-	Title *string `json:"title,omitempty"`
-	Url *string `json:"url,omitempty"`
+	Limit *int `json:"limit,omitempty"`
+	Offset *int `json:"offset,omitempty"`
 }
 
 // asMap turns a typed request/data struct into the map[string]any the

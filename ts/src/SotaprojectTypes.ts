@@ -17,13 +17,7 @@ export interface Publication {
 }
 
 export interface PublicationListMatch {
-  author?: string
-  category?: string
-  content?: string
-  id?: string
-  media?: any[]
-  published_at?: string
-  title?: string
-  url?: string
+  limit?: number
+  offset?: number
 }
 

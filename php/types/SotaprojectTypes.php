@@ -28,13 +28,7 @@ class Publication
 /** Request payload for Publication#list. */
 class PublicationListMatch
 {
-    public ?string $author = null;
-    public ?string $category = null;
-    public ?string $content = null;
-    public ?string $id = null;
-    public ?array $media = null;
-    public ?string $published_at = null;
-    public ?string $title = null;
-    public ?string $url = null;
+    public ?int $limit = null;
+    public ?int $offset = null;
 }
 

@@ -28,11 +28,5 @@ class Publication(TypedDict, total=False):
 
 
 class PublicationListMatch(TypedDict, total=False):
-    author: str
-    category: str
-    content: str
-    id: str
-    media: list
-    published_at: str
-    title: str
-    url: str
+    limit: int
+    offset: int

@@ -47,38 +47,14 @@ Publication = Struct.new(
 
 # Request payload for Publication#list.
 #
-# @!attribute [rw] author
-#   @return [String, nil]
+# @!attribute [rw] limit
+#   @return [Integer, nil]
 #
-# @!attribute [rw] category
-#   @return [String, nil]
-#
-# @!attribute [rw] content
-#   @return [String, nil]
-#
-# @!attribute [rw] id
-#   @return [String, nil]
-#
-# @!attribute [rw] media
-#   @return [Array, nil]
-#
-# @!attribute [rw] published_at
-#   @return [String, nil]
-#
-# @!attribute [rw] title
-#   @return [String, nil]
-#
-# @!attribute [rw] url
-#   @return [String, nil]
+# @!attribute [rw] offset
+#   @return [Integer, nil]
 PublicationListMatch = Struct.new(
-  :author,
-  :category,
-  :content,
-  :id,
-  :media,
-  :published_at,
-  :title,
-  :url,
+  :limit,
+  :offset,
   keyword_init: true
 )
 

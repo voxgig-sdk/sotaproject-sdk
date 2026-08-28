@@ -17,14 +17,8 @@
 ---@field url? string
 
 ---@class PublicationListMatch
----@field author? string
----@field category? string
----@field content? string
----@field id? string
----@field media? table
----@field published_at? string
----@field title? string
----@field url? string
+---@field limit? number
+---@field offset? number
 
 local M = {}
 
