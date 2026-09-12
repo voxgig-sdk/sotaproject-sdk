@@ -36,6 +36,7 @@ main: kit: entity: publication: {
       type: "`$ARRAY`"
     }
     {
+      format: "date-time"
       name: "published_at"
       req: false
       short: "Publication date and time"
@@ -48,6 +49,7 @@ main: kit: entity: publication: {
       type: "`$STRING`"
     }
     {
+      format: "uri"
       name: "url"
       req: false
       short: "URL to the full publication"
@@ -88,8 +90,10 @@ main: kit: entity: publication: {
           }
           method: "GET"
           orig: "/tg-news"
-          parts: [
-            "tg-news"
+          segments: [
+            {
+              lit: "tg-news"
+            }
           ]
           select: {
             exist: [

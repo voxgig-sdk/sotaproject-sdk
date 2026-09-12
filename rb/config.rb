@@ -69,6 +69,7 @@ module SotaprojectConfig
               "type" => "`$ARRAY`",
             },
             {
+              "format" => "date-time",
               "name" => "published_at",
               "short" => "Publication date and time",
               "type" => "`$STRING`",
@@ -79,11 +80,16 @@ module SotaprojectConfig
               "type" => "`$STRING`",
             },
             {
+              "format" => "uri",
               "name" => "url",
               "short" => "URL to the full publication",
               "type" => "`$STRING`",
             },
           ],
+          "id" => {
+            "field" => "id",
+            "name" => "id",
+          },
           "name" => "publication",
           "op" => {
             "list" => {
@@ -112,8 +118,10 @@ module SotaprojectConfig
                   "kind" => "http",
                   "method" => "GET",
                   "orig" => "/tg-news",
-                  "parts" => [
-                    "tg-news",
+                  "segments" => [
+                    {
+                      "lit" => "tg-news",
+                    },
                   ],
                   "select" => {
                     "exist" => [
@@ -125,6 +133,9 @@ module SotaprojectConfig
                     "req" => "`reqdata`",
                     "res" => "`body.publications`",
                   },
+                  "parts" => [
+                    "tg-news",
+                  ],
                 },
               ],
             },

@@ -57,6 +57,7 @@ local function make_config()
             ["type"] = "`$ARRAY`",
           },
           {
+            ["format"] = "date-time",
             ["name"] = "published_at",
             ["short"] = "Publication date and time",
             ["type"] = "`$STRING`",
@@ -67,10 +68,15 @@ local function make_config()
             ["type"] = "`$STRING`",
           },
           {
+            ["format"] = "uri",
             ["name"] = "url",
             ["short"] = "URL to the full publication",
             ["type"] = "`$STRING`",
           },
+        },
+        ["id"] = {
+          ["field"] = "id",
+          ["name"] = "id",
         },
         ["name"] = "publication",
         ["op"] = {
@@ -100,8 +106,10 @@ local function make_config()
                 ["kind"] = "http",
                 ["method"] = "GET",
                 ["orig"] = "/tg-news",
-                ["parts"] = {
-                  "tg-news",
+                ["segments"] = {
+                  {
+                    ["lit"] = "tg-news",
+                  },
                 },
                 ["select"] = {
                   ["exist"] = {
@@ -112,6 +120,9 @@ local function make_config()
                 ["transform"] = {
                   ["req"] = "`reqdata`",
                   ["res"] = "`body.publications`",
+                },
+                ["parts"] = {
+                  "tg-news",
                 },
               },
             },

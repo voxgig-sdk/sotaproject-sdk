@@ -83,6 +83,7 @@ class SotaprojectConfig
               'type' => '`$ARRAY`',
             ],
             [
+              'format' => 'date-time',
               'name' => 'published_at',
               'short' => 'Publication date and time',
               'type' => '`$STRING`',
@@ -93,10 +94,15 @@ class SotaprojectConfig
               'type' => '`$STRING`',
             ],
             [
+              'format' => 'uri',
               'name' => 'url',
               'short' => 'URL to the full publication',
               'type' => '`$STRING`',
             ],
+          ],
+          'id' => [
+            'field' => 'id',
+            'name' => 'id',
           ],
           'name' => 'publication',
           'op' => [
@@ -126,8 +132,10 @@ class SotaprojectConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/tg-news',
-                  'parts' => [
-                    'tg-news',
+                  'segments' => [
+                    [
+                      'lit' => 'tg-news',
+                    ],
                   ],
                   'select' => [
                     'exist' => [
@@ -138,6 +146,9 @@ class SotaprojectConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.publications`',
+                  ],
+                  'parts' => [
+                    'tg-news',
                   ],
                 ],
               ],
