@@ -105,7 +105,7 @@ local results, err = client:Publication():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/sotaproject` | publish pending — [install from git tag](https://github.com/voxgig-sdk/sotaproject-sdk/releases) |
+| TypeScript | `@voxgig-sdk/sotaproject-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/sotaproject-sdk/releases) |
 | Python | `voxgig-sdk-sotaproject` | publish pending — [install from git tag](https://github.com/voxgig-sdk/sotaproject-sdk/releases) |
 | PHP | `voxgig-sdk/sotaproject` | publish pending — [install from git tag](https://github.com/voxgig-sdk/sotaproject-sdk/releases) |
 | Golang | `github.com/voxgig-sdk/sotaproject-sdk/go` | `go get github.com/voxgig-sdk/sotaproject-sdk/go@latest` |
@@ -119,7 +119,7 @@ local results, err = client:Publication():list()
 ### TypeScript
 
 ```ts
-import { SotaprojectSDK } from '@voxgig-sdk/sotaproject'
+import { SotaprojectSDK } from '@voxgig-sdk/sotaproject-sdk'
 
 const client = new SotaprojectSDK()
 

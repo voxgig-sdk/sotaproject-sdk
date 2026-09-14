@@ -28,7 +28,7 @@ loading a specific record.
 ### 1. Create a client
 
 ```ts
-import { SotaprojectSDK } from '@voxgig-sdk/sotaproject'
+import { SotaprojectSDK } from '@voxgig-sdk/sotaproject-sdk'
 
 const client = new SotaprojectSDK()
 ```
@@ -417,7 +417,7 @@ sotaproject/
 Import the SDK from the package root:
 
 ```ts
-import { SotaprojectSDK } from '@voxgig-sdk/sotaproject'
+import { SotaprojectSDK } from '@voxgig-sdk/sotaproject-sdk'
 ```
 
 ### Entity state
